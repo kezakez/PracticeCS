@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PracticeCS.Tests", "PracticeCS.Tests\PracticeCS.Tests.csproj", "{F030E22A-883B-4778-A90B-219E3B54A70D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PracticeCS", "PracticeCS\PracticeCS.csproj", "{CE5AF0FD-2028-4985-A917-68DE0083FC95}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F030E22A-883B-4778-A90B-219E3B54A70D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F030E22A-883B-4778-A90B-219E3B54A70D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F030E22A-883B-4778-A90B-219E3B54A70D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F030E22A-883B-4778-A90B-219E3B54A70D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE5AF0FD-2028-4985-A917-68DE0083FC95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE5AF0FD-2028-4985-A917-68DE0083FC95}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE5AF0FD-2028-4985-A917-68DE0083FC95}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE5AF0FD-2028-4985-A917-68DE0083FC95}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
