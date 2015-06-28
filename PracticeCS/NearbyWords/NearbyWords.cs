@@ -16,35 +16,32 @@ namespace PracticeCS.NearbyWords
             _wordHelper = wordHelper;
         }
 
-        public List<string> GetWords(string input)
+        public IEnumerable<string> GetWords(string input)
         {
             if (string.IsNullOrEmpty(input)) return new List<string>();
 
-            return GetPermutations(input, 0).ToList().Where(_wordHelper.IsWord).ToList();
+            return GetPermutations(input, 0).Where(_wordHelper.IsWord);
         }
 
         private IEnumerable<string> GetPermutations(string input, int charIndex)
         {
-            var result = new List<string>();
-
             var letters = _wordHelper.LettersNear(input[charIndex]);
             foreach (var letter in letters)
             {
                 var charArray = input.ToCharArray();
                 charArray[charIndex] = letter;
-                var newWord = new String(charArray);
+                var newWord = new string(charArray);
 
                 if (charIndex + 1 < input.Length)
                 {
-                    result.AddRange(GetPermutations(newWord, charIndex + 1));
+                    foreach (var result in GetPermutations(newWord, charIndex + 1))
+                        yield return result;
                 }
                 else
                 {
-                    result.Add(newWord);
+                    yield return newWord;
                 }
             }
-
-            return result;
         }
     }
 }

@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
 using PracticeCS.NearbyWords;
@@ -33,7 +34,7 @@ namespace PracticeCS.Tests
             var result = target.GetWords("");
 
             //assert
-            result.Count.ShouldEqual(0);
+            result.Count().ShouldEqual(0);
         }
 
         [TestMethod]
@@ -46,7 +47,7 @@ namespace PracticeCS.Tests
             var result = target.GetWords(null);
 
             //assert
-            result.Count.ShouldEqual(0);
+            result.Count().ShouldEqual(0);
         }
 
         [TestMethod]
@@ -63,7 +64,7 @@ namespace PracticeCS.Tests
             var result = target.GetWords("abc");
 
             //assert
-            result.Count.ShouldEqual(27);
+            result.Count().ShouldEqual(27);
         }
     }
 
