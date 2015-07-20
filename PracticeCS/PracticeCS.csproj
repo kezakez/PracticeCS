@@ -39,6 +39,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CharacterAtPosition\CharacterAtPosition.cs" />
     <Compile Include="NearbyWords\IWordHelper.cs" />
     <Compile Include="NearbyWords\NearbyWords.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
