@@ -2,7 +2,7 @@
 using System.Linq;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
-using PracticeCS.NearbyWords;
+using PracticeCS.NearbyWordsProblem;
 using Should;
 
 namespace PracticeCS.Tests
@@ -14,10 +14,10 @@ namespace PracticeCS.Tests
         public void NearbyWords_should_ReturnValidResults()
         {
             //arrange
-            var target = new NearbyWords.NearbyWords(new WordHelperStub());
+            var target = new NearbyWords(new WordHelperStub());
 
             //act
-            var result = target.GetWords("gi");
+            var result = target.GetWords("gi").ToList();
 
             //assert
             result.ShouldContain("hi");
@@ -28,7 +28,7 @@ namespace PracticeCS.Tests
         public void NearbyWords_should_HandleEmptyWords()
         {
             //arrange
-            var target = new NearbyWords.NearbyWords(new WordHelperStub());
+            var target = new NearbyWords(new WordHelperStub());
 
             //act
             var result = target.GetWords("");
@@ -41,7 +41,7 @@ namespace PracticeCS.Tests
         public void NearbyWords_should_HandleNullWords()
         {
             //arrange
-            var target = new NearbyWords.NearbyWords(new WordHelperStub());
+            var target = new NearbyWords(new WordHelperStub());
 
             //act
             var result = target.GetWords(null);
@@ -58,7 +58,7 @@ namespace PracticeCS.Tests
             helperMock.Setup(h => h.IsWord(It.IsAny<string>())).Returns(true);
             helperMock.Setup(h => h.LettersNear(It.IsAny<char>())).Returns(new List<char>(){'a','b','c'});
 
-            var target = new NearbyWords.NearbyWords(helperMock.Object);
+            var target = new NearbyWords(helperMock.Object);
 
             //act
             var result = target.GetWords("abc");

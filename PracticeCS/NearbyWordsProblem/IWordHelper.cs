@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace PracticeCS.NearbyWords
+namespace PracticeCS.NearbyWordsProblem
 {
     public interface IWordHelper
     {

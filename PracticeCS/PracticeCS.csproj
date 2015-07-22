@@ -39,9 +39,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CharacterAtPosition\CharacterAtPosition.cs" />
-    <Compile Include="NearbyWords\IWordHelper.cs" />
-    <Compile Include="NearbyWords\NearbyWords.cs" />
+    <Compile Include="AnagramCounterProblem\AnagramCounter.cs" />
+    <Compile Include="CharacterPositionProblem\CharacterPosition.cs" />
+    <Compile Include="NearbyWordsProblem\IWordHelper.cs" />
+    <Compile Include="NearbyWordsProblem\NearbyWords.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -1,8 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 
-namespace PracticeCS.NearbyWords
+namespace PracticeCS.NearbyWordsProblem
 {
     /// <summary>
     /// Get words has O(n^m) time complexity n is the string length, m is the character permutations
