@@ -60,6 +60,7 @@
   <ItemGroup>
     <Compile Include="AnagramCounterTests.cs" />
     <Compile Include="CharacterAtPostionTests.cs" />
+    <Compile Include="IntegerToTextTests.cs" />
     <Compile Include="NearbyWordsTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

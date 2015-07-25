@@ -41,6 +41,7 @@
   <ItemGroup>
     <Compile Include="AnagramCounterProblem\AnagramCounter.cs" />
     <Compile Include="CharacterPositionProblem\CharacterPosition.cs" />
+    <Compile Include="IntegerToTextProblem\IntegerToText.cs" />
     <Compile Include="NearbyWordsProblem\IWordHelper.cs" />
     <Compile Include="NearbyWordsProblem\NearbyWords.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
